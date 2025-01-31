@@ -42,7 +42,6 @@ import numpy as np
 
 fig, ax = plt.subplots()
 x = jnp.logspace(0,9,1000)
-print(x[-1])
 tmax = jnp.pi*x[0]
 integral_value_jax = F(c1, c2, tmax, N)
 integral_value_analytic = ( jnp.arctan(tmax)-jnp.arctan(c2) ) * c1
